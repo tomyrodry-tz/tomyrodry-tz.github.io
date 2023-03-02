@@ -1,0 +1,264 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: 'Merienda One', cursive;
+}
+h1 {
+    font-size: 35pt;
+
+}
+h3 {
+    font-size: 20pt;
+}
+h2{
+    font-size: 25pt;
+}
+p, h2, h3, h4 , h5 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    background-color: #151515;
+    z-index: 99;
+    color: #08fdd8;
+
+}
+.navbar img {
+    width: 100%;
+}
+.navbar  a {
+    text-decoration: none;
+    color: #08fdd8;
+}
+.navbar p {
+    margin-bottom: 10%;
+}
+
+.IrA {
+    width: 100%;
+    height: 5%;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid #252525;
+}
+.IrA:hover {
+    background-color: #252525;
+}
+
+.github-linkedin {
+    display: flex;
+}
+.git{
+    margin-left: 30%;
+}
+.linkedin {
+    margin-left: 10%;
+}
+.git, .linkedin {
+    width: 13%;
+    margin-top: 10%;
+}
+
+.Inicio {
+    width: 100%;
+    display: flex;
+    background-color: #252525;
+    align-content: center;
+    padding-bottom: 10%;
+}
+.titulo-inicio {
+    text-align: left;
+    color: white;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 20%;
+}
+
+.Sobre-Mi {
+    width: 90%;
+    margin: auto;
+    margin-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+.Sobre-Mi h1 {
+    margin-left: 15%;
+}
+
+.Habilidades {
+    background-color: #252525;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+.Habilidades h1{
+    margin-left: 9%;
+}
+
+.Experiencia {
+    text-align: center;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+.Experiencia h1{
+    margin-left: 9%;
+}
+
+.Contacto {
+    background-color: #252525;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+.Contacto h1{
+    margin-left: 9%;
+}
+
+/* ------------------------------------------------------------ CARTAS SOBRE MI Y EDUCACION ------------------------------------------------------*/
+
+.cartas-sobre-mi {
+    display: flex;
+    margin: 5%;
+    margin-left: 15%;
+}
+.cartas-sobre-mi p {
+    margin-top: 20%;
+}
+.cartas-sobre-mi h1{
+    font-size: 30pt;
+}
+
+.cartas-educacion {
+    display: flex;
+    margin: 5%;
+    margin-left: 15%;
+}
+.cartas-educacion p{
+    margin-top: 20%
+}
+.cartas-educacion h1{
+    font-size: 30pt;
+}
+
+.carta {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: 5%;
+}
+  
+.flip-carta {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+}
+  
+.carta:hover .flip-carta {
+    transform: rotateY(180deg);
+}
+  
+.frontal, .trasera {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.frontal {
+    background-color: #252525;
+    color: white;
+    border-radius: 20px;
+}
+.frontal h2 {
+    text-align: center;
+    margin-top: 25%;
+}
+.frontal img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    width: 70%;
+}
+  
+.trasera {
+    background-color: #252525;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+}
+.trasera p {
+    padding: 5%;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/*--------------------------------------------------------- CARTAS HABILIDADES ------------------------------------------------------------------*/
+
+.cartas-habilidades {
+    display: flex;
+    margin: 5%;
+    margin-left: 15%;
+}
+
+.carta-frontend {
+    width: 20%;
+    height: 100%;
+    margin-left: 15%;
+    padding-bottom: 2%;
+    background-color: #191919;
+    color: white;
+    border-radius: 20px;
+}
+.carta-backend {
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    background-color: #191919;
+    color: white;
+    border-radius: 20px;
+}
+.carta-extras {
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    background-color: #191919;
+    color: white;
+    border-radius: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    background-color: #101010;
+    border-radius: 5%;
+}
+.titulos {
+    background-color: #151515;
+}
+
