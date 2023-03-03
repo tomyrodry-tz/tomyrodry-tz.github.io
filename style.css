@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 h1 {
-    font-family: 'Merienda One', cursive;
+    font-family: 'Space Mono', monospace;
 }
 h1 {
     font-size: 35pt;
@@ -19,6 +19,8 @@ p, h2, h3, h4 , h5 {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*---------------------------------------------------------------- NAVBAR -----------------------------------------------------------------------*/
+
 .navbar {
     width: 15%;
     height: 100%;
@@ -31,6 +33,7 @@ p, h2, h3, h4 , h5 {
 }
 .navbar img {
     width: 100%;
+    height: 100%;
 }
 .navbar  a {
     text-decoration: none;
@@ -68,27 +71,40 @@ p, h2, h3, h4 , h5 {
     margin-top: 10%;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.burbuja {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: #08fdd8;
+    border-style: solid;
+    position: relative;
+}
+
 .Inicio {
-    width: 100%;
+    width: 85%;
     display: flex;
     background-color: #252525;
     align-content: center;
     padding-bottom: 10%;
+    margin-left: 15%;
 }
 .titulo-inicio {
     text-align: left;
     color: white;
     margin-top: 10%;
-    margin-left: 20%;
     margin-bottom: 20%;
 }
 
 .Sobre-Mi {
-    width: 90%;
+    width: 75%;
     margin: auto;
     margin-left: 10%;
     padding-top: 2%;
     padding-bottom: 10%;
+    margin-left: 15%;
 }
 .Sobre-Mi h1 {
     margin-left: 15%;
@@ -98,34 +114,28 @@ p, h2, h3, h4 , h5 {
     background-color: #252525;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 85%;
     padding-top: 2%;
     padding-bottom: 10%;
-}
-.Habilidades h1{
-    margin-left: 9%;
+    margin-left: 15%;
 }
 
 .Experiencia {
     text-align: center;
-    width: 100%;
+    width: 85%;
     padding-top: 2%;
     padding-bottom: 10%;
-}
-.Experiencia h1{
-    margin-left: 9%;
+    margin-left: 15%;
 }
 
 .Contacto {
     background-color: #252525;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 85%;
     padding-top: 2%;
     padding-bottom: 10%;
-}
-.Contacto h1{
-    margin-left: 9%;
+    margin-left: 15%;
 }
 
 /* ------------------------------------------------------------ CARTAS SOBRE MI Y EDUCACION ------------------------------------------------------*/
@@ -217,7 +227,6 @@ p, h2, h3, h4 , h5 {
 .cartas-habilidades {
     display: flex;
     margin: 5%;
-    margin-left: 15%;
 }
 
 .carta-frontend {
@@ -228,6 +237,7 @@ p, h2, h3, h4 , h5 {
     background-color: #191919;
     color: white;
     border-radius: 20px;
+    animation: habilidades-animacion 5s;
 }
 .carta-backend {
     width: 20%;
@@ -237,6 +247,7 @@ p, h2, h3, h4 , h5 {
     background-color: #191919;
     color: white;
     border-radius: 20px;
+    animation: habilidades-animacion 10s;
 }
 .carta-extras {
     width: 20%;
@@ -246,6 +257,7 @@ p, h2, h3, h4 , h5 {
     background-color: #191919;
     color: white;
     border-radius: 20px;
+    animation: habilidades-animacion 15s;
 }
 
 .titulo {
@@ -262,3 +274,9 @@ p, h2, h3, h4 , h5 {
     background-color: #151515;
 }
 
+@keyframes habilidades-animacion {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+/*---------------------------------------------------------------- EXPERIENCIA ------------------------------------------------------------------*/
