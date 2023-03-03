@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onscroll="myFunction()">
 <!--------------------------------------------------------------------- NAVBAR ------------------------------------------------------------------->
     <div class="navbar">
         <div class="foto"><img src="img/yo.jpg" alt="Una foto mia"></div>
@@ -25,7 +25,7 @@
             <div class="git"><a href="https://github.com/tomyrodry-tz"><img src="img/github.svg" alt="icono github"></a></div>
             <div class="linkedin"><a href="https://www.linkedin.com/in/tomás-rodríguez-61711120b/"><img src="img/linkedin.svg" alt="icono linkedin"></a></div>
         </div>
-
+        <p id="demo"></p>
     </div>
 
 <!--------------------------------------------------------------------- INICIO ------------------------------------------------------------------>
@@ -139,7 +139,7 @@
     <div class="Habilidades" id="habilidades">
         <h1>Habilidades</h1>
         <div class="cartas-habilidades">
-            <div class="carta-frontend">
+            <div class="carta-frontend" id="cf">
                 <div class="titulo">
                     <h2>Frontend</h2>
                 </div>
@@ -156,7 +156,7 @@
                 </div>
                 <p>Basico</p>
             </div>
-            <div class="carta-backend">
+            <div class="carta-backend" id="cb">
                 <div class="titulo">
                     <h2>Backend</h2>
                 </div>
@@ -173,7 +173,7 @@
                 </div>
                 <p>Basico</p>
             </div>
-            <div class="carta-extras">
+            <div class="carta-extras" id="ce">
                 <div class="titulo">
                     <h2>Extras</h2>
                 </div>

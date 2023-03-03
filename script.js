@@ -17,3 +17,21 @@ setInterval(() => {   // Hacemos que cada 3s le de una ubicacion random
     
 }, 3000); // Tiempo en milisegundos
 
+
+// Animacion Carta de Habilidades
+
+const hab = document.getElementById("habilidades");
+const cf = document.getElementById("cf");
+const cb = document.getElementById("cb");
+const ce = document.getElementById("ce");
+const dist = hab.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= dist-500) {
+        cf.style.animationPlayState = "running"
+        cb.style.animationPlayState = "running"
+        ce.style.animationPlayState = "running"
+    }else {
+
+    }
+}

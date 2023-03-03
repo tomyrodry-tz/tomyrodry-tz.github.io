@@ -248,6 +248,7 @@ p, h2, h3, h4 , h5 {
     color: white;
     border-radius: 20px;
     animation: habilidades-animacion 5s;
+    animation-play-state: paused;
 }
 .carta-backend {
     width: 20%;
@@ -258,7 +259,9 @@ p, h2, h3, h4 , h5 {
     color: white;
     border-radius: 20px;
     animation: habilidades-animacion 10s;
+    animation-play-state: paused;
 }
+
 .carta-extras {
     width: 20%;
     height: 100%;
@@ -268,6 +271,7 @@ p, h2, h3, h4 , h5 {
     color: white;
     border-radius: 20px;
     animation: habilidades-animacion 15s;
+    animation-play-state: paused;
 }
 
 .titulo {
