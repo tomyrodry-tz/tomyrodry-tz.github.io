@@ -15,7 +15,7 @@ setInterval(() => {   // Hacemos que cada 3s le de una ubicacion random
         burbujas[i].style.top = getRandom(0, 750 - 100)+'px'; 
     }
     
-}, 3000); // Tiempo en milisegundos
+}, 2000); // Tiempo en milisegundos
 
 
 // Animacion Carta de Habilidades
@@ -28,10 +28,8 @@ const dist = hab.offsetTop;
 
 function myFunction() {
     if (window.pageYOffset >= dist-500) {
-        cf.style.animationPlayState = "running"
-        cb.style.animationPlayState = "running"
-        ce.style.animationPlayState = "running"
-    }else {
-
+        cf.style.animationPlayState = "running";
+        cb.style.animationPlayState = "running";
+        ce.style.animationPlayState = "running";
     }
 }

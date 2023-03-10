@@ -18,6 +18,10 @@ h2{
 p, h2, h3, h4 , h5 {
     font-family: 'Open Sans', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: #08fdd8;
+}
 
 /*---------------------------------------------------------------- NAVBAR -----------------------------------------------------------------------*/
 
@@ -34,10 +38,6 @@ p, h2, h3, h4 , h5 {
 .navbar img {
     width: 100%;
     height: 100%;
-}
-.navbar  a {
-    text-decoration: none;
-    color: #08fdd8;
 }
 .navbar p {
     margin-bottom: 10%;
@@ -88,6 +88,18 @@ p, h2, h3, h4 , h5 {
     margin-bottom: 20%;
     margin-left: 5%;
 }
+.boton-contacto {
+    width: 40%;
+    height: 10%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5%;
+    border: 2px solid #08fdd8;
+    border-radius: 10px;
+}
+.boton-contacto:hover {
+    background-color: #191919;
+}
 
 .Sobre-Mi {
     width: 75%;
@@ -119,7 +131,7 @@ p, h2, h3, h4 , h5 {
     margin-left: 15%;
 }
 
-.Contacto {
+.Contacta-Me {
     background-color: #252525;
     text-align: center;
     color: white;
@@ -144,7 +156,7 @@ p, h2, h3, h4 , h5 {
     border-radius: 50%;
     border: solid 2px #08fdd8;
     background-color: transparent;
-    animation: animacion-burbuja 3s infinite;
+    animation: animacion-burbuja 2s infinite;
 }
 
 
@@ -156,10 +168,15 @@ p, h2, h3, h4 , h5 {
     margin-left: 15%;
 }
 .cartas-sobre-mi p {
-    margin-top: 20%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-.cartas-sobre-mi h1{
+.cartas-sobre-mi h2{
     font-size: 30pt;
+    padding-top: 15%;
 }
 
 .cartas-educacion {
@@ -168,10 +185,15 @@ p, h2, h3, h4 , h5 {
     margin-left: 15%;
 }
 .cartas-educacion p{
-    margin-top: 20%
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-.cartas-educacion h1{
+.cartas-educacion h2{
     font-size: 30pt;
+    padding-top: 15%;
 }
 
 .carta {
@@ -247,7 +269,7 @@ p, h2, h3, h4 , h5 {
     background-color: #191919;
     color: white;
     border-radius: 20px;
-    animation: habilidades-animacion 5s;
+    animation: habilidades-animacion 3s;
     animation-play-state: paused;
 }
 .carta-backend {
@@ -258,7 +280,7 @@ p, h2, h3, h4 , h5 {
     background-color: #191919;
     color: white;
     border-radius: 20px;
-    animation: habilidades-animacion 10s;
+    animation: habilidades-animacion 4s;
     animation-play-state: paused;
 }
 
@@ -270,7 +292,7 @@ p, h2, h3, h4 , h5 {
     background-color: #191919;
     color: white;
     border-radius: 20px;
-    animation: habilidades-animacion 15s;
+    animation: habilidades-animacion 5s;
     animation-play-state: paused;
 }
 
@@ -294,3 +316,77 @@ p, h2, h3, h4 , h5 {
 }
 
 /*---------------------------------------------------------------- EXPERIENCIA ------------------------------------------------------------------*/
+
+.trabajos {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 't1 t3' 't2 t4';
+    margin: auto;
+}
+.trabajos img{
+    width: 100%;
+    height: 100%;
+    border:solid 2px #252525;
+}
+
+.t1 { grid-area: t1;}
+.t2 { grid-area: t2;}
+.t3 { grid-area: t3;}
+.t4 { grid-area: t4;}
+.t5 { grid-area: t5;}
+
+/*---------------------------------------------------------------- CONTACTA ME -------------------------------------------------------------------*/
+
+.contactos {
+    display: flex;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+.email {
+    width: 20%;
+}
+.icono-email{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 35%;
+}
+.icono-email img {
+    margin-top: 30%;
+    width: 40%;
+}
+
+.telefono {
+    width: 20%;
+    margin-left: 10%;
+}
+.icono-telefono{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 30%;
+}
+.icono-telefono img {
+    margin-top: 30%;
+    width: 40%;
+}
+
+.discord {
+    width: 20%;
+    margin-left: 10%;
+}
+.icono-discord {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+.icono-discord img {
+    margin-top: 30%;
+    width: 40%;
+}
