@@ -1,4 +1,4 @@
-// Animacion Burbujas
+// Animacion Burbujas - Aparecen en un lugar random
 
 const burbujas = document.getElementsByClassName("Burbujas");
 const getRandom = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
@@ -18,7 +18,7 @@ setInterval(() => {   // Hacemos que cada 3s le de una ubicacion random
 }, 2000); // Tiempo en milisegundos
 
 
-// Animacion Carta de Habilidades
+// Animacion Carta de Habilidades - Aparecen visibles
 
 const hab = document.getElementById("habilidades");
 const cf = document.getElementById("cf");
@@ -26,10 +26,49 @@ const cb = document.getElementById("cb");
 const ce = document.getElementById("ce");
 const dist = hab.offsetTop;
 
-function myFunction() {
+function runningAnimation() {
     if (window.pageYOffset >= dist-500) {
         cf.style.animationPlayState = "running";
         cb.style.animationPlayState = "running";
         ce.style.animationPlayState = "running";
     }
+}
+
+// Animacion Experiencia - Slides 
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+  let i;
+  let slides = document.getElementsByClassName("cartas-trabajos");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {
+    slideIndex = 1
+  }    
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }  
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
 }

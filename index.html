@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 
 </head>
-<body onscroll="myFunction()">
+<body onscroll="runningAnimation()">
 <!--------------------------------------------------------------------- NAVBAR ------------------------------------------------------------------->
     <div class="navbar">
         <div class="foto"><img src="img/yo.jpg" alt="Una foto mia"></div>
@@ -198,10 +198,41 @@
         <h1>Experiencia</h1>
 
         <div class="trabajos">
-            <div class="t1"><img src="img/trabajos/app-react-native.jpg" alt=""></div>
-            <div class="t2"><img src="img/trabajos/arg-programa-tp-final.jpg" alt=""></div>
-            <div class="t3"><img src="img/trabajos/proyecto-zonammorpg.jpg" alt=""></div>
-            <div class="t4"><img src="img/trabajos/lactres-catalogos.jpg" alt=""></div>
+            <div class="cartas-trabajos">
+                <img src="img/trabajos/app-react-native.jpg" alt="">
+                <div class="info">
+                    <h4>App React Native</h4>
+                </div>
+            </div>
+            <div class="cartas-trabajos">
+                <img src="img/trabajos/arg-programa-tp-final.jpg" style="width: 70%;">
+                <div class="info">
+                    <h4>App React Native</h4>
+                </div>
+            </div>
+            <div class="cartas-trabajos">
+                <img src="img/trabajos/proyecto-zonammorpg.jpg" alt="">
+                <div class="info">
+                    <h4>App React Native</h4>
+                </div>
+            </div>
+            <div class="cartas-trabajos">
+                <img src="img/trabajos/lactres-catalogos.jpg" style="width: 70%;">
+                <div class="info">
+                    <h4>App React Native</h4>
+                </div>
+            </div>
+
+            <a class="anterior" onclick="plusSlides(-1)">❮</a>
+            <a class="siguiente" onclick="plusSlides(1)">❯</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+
         </div>
     </div>
 
