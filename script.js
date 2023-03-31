@@ -34,41 +34,29 @@ function runningAnimation() {
     }
 }
 
-// Animacion Experiencia - Slides 
+// Animacion Experiencia - Popup
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function myPopup1() {
+  var popup = document.getElementById("popup1");
+  popup.classList.toggle("show");
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function myPopup2() {
+  var popup = document.getElementById("popup2");
+  popup.classList.toggle("show");
 }
-
-function showSlides(n) {
-
-  let i;
-  let slides = document.getElementsByClassName("cartas-trabajos");
-  let dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) {
-    slideIndex = 1
-  }    
-  if (n < 1) {
-    slideIndex = slides.length
-  }
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }  
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-
+function myPopup3() {
+  var popup = document.getElementById("popup3");
+  popup.classList.toggle("show");
+}
+function myPopup4() {
+  var popup = document.getElementById("popup4");
+  popup.classList.toggle("show");
+}
+function myPopup5() {
+  var popup = document.getElementById("popup5");
+  popup.classList.toggle("show");
+}
+function myPopup6() {
+  var popup = document.getElementById("popup6");
+  popup.classList.toggle("show");
 }

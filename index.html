@@ -202,120 +202,111 @@
     <div class="Experiencia" id="exp">
         <h1>Experiencia</h1>
 
-        <div class="trabajos">
-            <div class="cartas-trabajos">
-                <img src="img/trabajos/arg-programa-tp-final.jpg" style="width: 70%;">
-                <div class="info">
-                    <h4>
-                        Proyecto final del curso Argentina Programa.
-                    </h4>
-                    <p>
-                        Este proyecto consistia en hacer un portafolio partiendo de la base que ellos nos daban.
-                        <br>
-                        Para el frontend use: HTML, CSS (Bootstrap), JS y ademas aprendi Angular la cual no me gusto y prefiero usar React. 
-                        <br>
-                        En la parte backend: PHP, MySQL, Django y Heroku.
-                    </p>
-                    <div class="boton-exp">
-                        <a href="https://github.com/tomyrodry-tz/argentina-programa-portafolio" target="_blank">git hub</a>
+        <div class="trabajos-contenedor">
+            <div class="trabajos-grupo">
+                <div class="trabajos-cartas" onclick="myPopup1()">
+                    <img src="img/trabajos/arg-programa-tp-final.jpg">
+                    <div class="info" id="popup1">
+                        <h4>
+                            Proyecto final del curso Argentina Programa.
+                        </h4>
+                        <p>
+                            Este proyecto consistia en hacer un portafolio partiendo de la base que ellos nos daban.
+                            <br>
+                            Para el frontend use: HTML, CSS (Bootstrap), JS y ademas aprendi Angular la cual no me gusto y prefiero usar React. 
+                            <br>
+                            En la parte backend: PHP, MySQL, Django y Heroku.
+                        </p>
+                        <div class="boton-exp">
+                            <a href="https://github.com/tomyrodry-tz/argentina-programa-portafolio" target="_blank">git hub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabajos-cartas" onclick="myPopup2()">
+                    <img src="img/trabajos/comunicapp.jpg">
+                    <div class="info" id="popup2">
+                        <h4>
+                            ComunicApp | TP Final Diseño Multimedial IV
+                        </h4>
+                        <p>
+                            En este proyecto nos pidieron que hagamos una app que resuelva una problematica y propuse la idea de hacer algo para ayudar a la gente sorda muda ya que mucha gente no sabe lenguajes de seña. 
+                            <br>
+                            Espero algun dia poder hacer esta app y asi ayudar a la gente.
+                            <br>
+                            Utilzamos figma para diseñar y prototipar.
+                        </p>
+                        <div class="boton-exp">
+                            <a href="https://www.figma.com/proto/CYW415NO6hNEWpTJUN6jon/ComunicApp?node-id=1-2&starting-point-node-id=1%3A2" target="_blank">ver prototipo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabajos-cartas" onclick="myPopup3()">
+                    <img src="img/trabajos/seminario-ux-ui.jpg">
+                    <div class="info" id="popup3">
+                        <h4>
+                            TP Final Seminario de Diseño UX/UI
+                        </h4>
+                        <p>
+                            En este TP nos pidieron re diseñar el como sacar un turno de SENASA desde la app miArgentina.
+                            <br>
+                            Utilzamos figma para diseñar y prototipar.
+                            <br>
+                            <br>
+                            Aclaracion: SENASA tiene su propia web no existe la opcion para sacar turno desde miArgentina, esto se creo solo para el seminario.
+                        </p>
+                        <div class="boton-exp">
+                            <a href="https://www.figma.com/proto/66zBlfaZ4U1hpGxRcdFWKF/XD-SENASA?node-id=6-4&starting-point-node-id=6%3A4" target="_blank">ver prototipo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="cartas-trabajos">
-                <img src="img/trabajos/app-react-native.jpg">
-                <div class="info">
-                    <h4>
-                        App hecha con React Native y Expo. 
-                    </h4>
-                    <p>
-                        Esta app permite selecionar una foto de tu galeria y compartirla. 
-                        <br>
-                        Utilece el emulador de Android que trae Android Studio y lo conecte con Expo. 
-                    </p>
-                    <div class="boton-exp">
-                        <a href="https://github.com/tomyrodry-tz/my-first-app" target="_blank">git hub</a>
+            <div class="trabajos-grupo">
+                <div class="trabajos-cartas" onclick="myPopup4()">
+                    <img src="img/trabajos/app-react-native.jpg">
+                    <div class="info" id="popup4">
+                        <h4>
+                            App hecha con React Native y Expo. 
+                        </h4>
+                        <p>
+                            Esta app permite selecionar una foto de tu galeria y compartirla. 
+                            <br>
+                            Utilece el emulador de Android que trae Android Studio y lo conecte con Expo. 
+                        </p>
+                        <div class="boton-exp">
+                            <a href="https://github.com/tomyrodry-tz/my-first-app" target="_blank">git hub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trabajos-cartas" onclick="myPopup5()">
+                    <img src="img/trabajos/proyecto-zonammorpg.jpg">
+                    <div class="info" id="popup5">
+                        <h4>
+                            Rediseño de <a href="https://www.zonammorpg.com">zonammorpg.com</a> | TP de Facultad.
+                        </h4>
+                        <p>
+                            El trabajo final de 2do año fue rediseñar una pagina web partiendo desde la base de la web actual.
+                            <br>
+                            Utilizamos Ilustrator para diseñar y Marvel XD para prototipar esta pagina.
+                        </p>
+                    </div>
+                </div>
+                <div class="trabajos-cartas" onclick="myPopup6()">
+                    <img src="img/trabajos/lactres-catalogos.jpg">
+                    <div class="info" id="popup6">
+                        <h4>
+                            Catalogos para Lac-Tres (mayorista)
+                        </h4>
+                        <p>
+                            Edito las fotos y Diseño los catalogos que se ven en la foto 
+                            <br>
+                            Utilzo Afinity Photo para editar los productos y el Afinity Designer para armar el catalogo 
+                        </p>
+                        <div class="boton-exp">
+                            <a href="img/trabajos/catalogos.pdf" target="_blank">ver mas</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="cartas-trabajos">
-                <img src="img/trabajos/seminario-ux-ui.jpg">
-                <div class="info">
-                    <h4>
-                        TP Final Seminario de Diseño UX/UI
-                    </h4>
-                    <p>
-                        En este TP nos pidieron re diseñar el como sacar un turno de SENASA desde la app miArgentina.
-                        <br>
-                        Utilzamos figma para diseñar y prototipar.
-                        <br>
-                        <br>
-                        Aclaracion: SENASA tiene su propia web no existe la opcion para sacar turno desde miArgentina, esto se creo solo para el seminario.
-                    </p>
-                    <div class="boton-exp">
-                        <a href="https://www.figma.com/proto/66zBlfaZ4U1hpGxRcdFWKF/XD-SENASA?node-id=6-4&starting-point-node-id=6%3A4" target="_blank">ver prototipo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cartas-trabajos">
-                <img src="img/trabajos/comunicapp.jpg">
-                <div class="info">
-                    <h4>
-                        ComunicApp | TP Final Diseño Multimedial IV
-                    </h4>
-                    <p>
-                        En este proyecto nos pidieron que hagamos una app que resuelva una problematica y propuse la idea de hacer algo para ayudar a la gente sorda muda ya que mucha gente no sabe lenguajes de seña. 
-                        <br>
-                        Espero algun dia poder hacer esta app y asi ayudar a la gente.
-                        <br>
-                        Utilzamos figma para diseñar y prototipar.
-                    </p>
-                    <div class="boton-exp">
-                        <a href="https://www.figma.com/proto/CYW415NO6hNEWpTJUN6jon/ComunicApp?node-id=1-2&starting-point-node-id=1%3A2" target="_blank">ver prototipo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="cartas-trabajos">
-                <img src="img/trabajos/proyecto-zonammorpg.jpg">
-                <div class="info">
-                    <h4>
-                        Rediseño de <a href="https://www.zonammorpg.com">zonammorpg.com</a> | TP de Facultad.
-                    </h4>
-                    <p>
-                        El trabajo final de 2do año fue rediseñar una pagina web partiendo desde la base de la web actual.
-                        <br>
-                        Utilizamos Ilustrator para diseñar y Marvel XD para prototipar esta pagina.
-                    </p>
-                </div>
-            </div>
-            <div class="cartas-trabajos">
-                <img src="img/trabajos/lactres-catalogos.jpg" style="width: 70%;">
-                <div class="info">
-                    <h4>
-                        Catalogos para Lac-Tres (mayorista)
-                    </h4>
-                    <p>
-                        Edito las fotos y Diseño los catalogos que se ven en la foto 
-                        <br>
-                        Utilzo Afinity Photo para editar los productos y el Afinity Designer para armar el catalogo 
-                    </p>
-                    <div class="boton-exp">
-                        <a href="img/trabajos/catalogos.pdf" target="_blank">ver mas</a>
-                    </div>
-                </div>
-            </div>
-
-            <a class="anterior" onclick="plusSlides(-1)">❮</a>
-            <a class="siguiente" onclick="plusSlides(1)">❯</a>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-                <span class="dot" onclick="currentSlide(4)"></span> 
-                <span class="dot" onclick="currentSlide(5)"></span> 
-                <span class="dot" onclick="currentSlide(6)"></span> 
-            </div>
-
         </div>
     </div>
 
