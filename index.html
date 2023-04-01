@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body onscroll="runningAnimation()">
 <!--------------------------------------------------------------------- NAVBAR ------------------------------------------------------------------->
-    <div class="navbar">
+    <div class="menu" onclick="navbarShow()">
+        <div class="linea-blanca"></div>
+        <div class="linea-blanca"></div>
+        <div class="linea-blanca"></div>
+    </div>
+    <div class="navbar" id="navbar">
         <div class="foto"><img src="img/yo.jpg" alt="Una foto mia"></div>
         <div class="IrA" style="border-top: 2px solid #252525;"><a href="#inicio"><p>Inicio</p></a></div>
         <div class="IrA"><a href="#sobre-mi"><p>Sobre Mi</p></a></div>
@@ -32,6 +37,7 @@
         <div class="titulo-inicio">
             <h2>Hola soy</h2>
             <h1 style="color: #08fdd8;">Tomas Rodriguez</h1>
+            <img src="img/yo.jpg" alt="una foto mia" class="foto-celu">
             <h2>Frontend Developer</h2>
             <div class="boton-contacto"><a href="#contacta-me"><p>Contacta Me !</p></a></div>
         </div>
@@ -328,7 +334,7 @@
                 <p>+54 2983659702</p>
             </div>
             <div class="discord">
-                <div class="icono-telefono">
+                <div class="icono-discord">
                     <img src="img/iconos/discord.svg" alt="">
                 </div>
                 <p>TZ#8705</p>

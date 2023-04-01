@@ -60,3 +60,10 @@ function myPopup6() {
   var popup = document.getElementById("popup6");
   popup.classList.toggle("show");
 }
+
+// Animacion del menu hamburguesa
+
+function navbarShow() {
+  var nb = document.getElementById("navbar");
+  nb.classList.toggle("show");
+}
