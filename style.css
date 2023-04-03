@@ -475,8 +475,8 @@ a {
         margin: auto;
         margin-top: 20%;
     }
-
-    .navbar {
+    
+    .navbar { 
         width: 60%;
         height: 90px;
         position: fixed;
