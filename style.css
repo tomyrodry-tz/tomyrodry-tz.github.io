@@ -455,46 +455,52 @@ a {
 
 /*---------------------------------------------------------------- NAVBAR CELU -------------------------------------------------------------------*/
     .menu {
-        width: 10%;
+        width: 40px;
+        height: 35px;
         display: block;
         background-color: #151515;
         position: fixed;
         z-index: 99;
-        border-radius: 10%;
+        border-radius: 20%;
         margin-top: 5%;
         margin-bottom: 10%;
+        margin-left: 2%;
     }
     .linea-blanca {
-        width: 80%;
-        height: 2px;
+        width: 30px;
+        height: 1px;
         background-color: white;
         margin: auto;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 20%;
     }
 
     .navbar {
-        width: 15%;
-        height: 40%;
+        width: 60%;
+        height: 90px;
         position: fixed;
-        display: block;
+        display: flex;
         background-color: #151515;
         z-index: 98;
         color: #08fdd8;
         visibility: hidden;
-        margin-top: 10%;
-    }
-    .navbar img {
-        width: 0%;
-        height: 0%;
+        margin-top: 5%;
+        margin-left: 20%;
     }
     .navbar p {
-        margin-top: 10%;
-        margin-bottom: 10%;
+        font-size: 7pt;
+        margin-top: 0%;
+        margin-bottom: 50%;
     }
 
     .show {
         visibility: visible;
+    }
+
+    .navbar .foto {
+        display: none;
+    }
+    .navbar .github-linkedin {
+        display: none;
     }
 
     .IrA {
@@ -507,21 +513,26 @@ a {
         padding-bottom: 5%;
         border-bottom: 2px solid #252525;
     }
+    .IrA:hover {
+        background-color: #08fdd8;
+    }
+    .IrA:hover a {
+        color: #101010;
+    }
 
 /*------------------------------------------------------------- INICIO CELU ----------------------------------------------------------------------*/
 
     .Inicio {
         width: 100%;
-        justify-content: center;
         background-color: #252525;
         align-content: center;
         padding-bottom: 10%;
         margin-left: 0%;
-        vertical-align: middle;
     }
     .titulo-inicio {
         text-align: center;
         justify-content: center;
+        align-items: center;
         color: white;
         margin-top: 10%;
         margin-bottom: 0%;
@@ -529,17 +540,18 @@ a {
     }
     .foto-celu {
         display: block;
-        width: 50%;
+        width: 60%;
+        margin-left: 20%;
     }
     .boton-contacto {
-        width: 55%;
-        height: 10%;
+        width: 40%;
+        height: 8%;
         text-transform: uppercase;
         text-align: center;
-        padding-bottom: 5%;
+        padding-bottom: 0%;
         border: 1px solid #08fdd8;
         border-radius: 10px;
-        margin-left: 20%;
+        margin-left: 30%;
     }
     .boton-contacto p {
         font-size: 8pt;
@@ -564,8 +576,8 @@ a {
     }
     .cartas-sobre-mi {
         display: block;
-        margin: 5%;
-        margin-left: 15%;
+        margin: 0%;
+        margin-left: 5%;
     }
     .cartas-sobre-mi p {
         margin: 0;
@@ -581,8 +593,8 @@ a {
     
     .cartas-educacion {
         display: block;
-        margin: 5%;
-        margin-left: 15%;
+        margin: 0%;
+        margin-left: 5%;
     }
     .cartas-educacion p{
         margin: 0;
@@ -619,13 +631,13 @@ a {
     }
     .cartas-habilidades {
         display: block;
-        margin: 5%;
+        margin: 0%;
     }
     
     .carta-frontend {
-        width: 50%;
+        width: 60%;
         height: 100%;
-        margin-left: 25%;
+        margin-left: 20%;
         padding-bottom: 2%;
         background-color: #191919;
         color: white;
@@ -634,9 +646,9 @@ a {
         animation-play-state: paused;
     }
     .carta-backend {
-        width: 50%;
+        width: 60%;
         height: 100%;
-        margin-left: 25%;
+        margin-left: 20%;
         margin-top: 5%;
         padding-bottom: 2%;
         background-color: #191919;
@@ -647,9 +659,9 @@ a {
     }
     
     .carta-extras {
-        width: 50%;
+        width: 60%;
         height: 100%;
-        margin-left: 25%;
+        margin-left: 20%;
         margin-top: 5%;
         padding-bottom: 2%;
         background-color: #191919;
@@ -673,7 +685,7 @@ a {
         width: 90%;
         display: block;
         flex-wrap: wrap;
-        margin-left: 4%;
+        margin-left: 0%;
     }
     
     .trabajos-grupo {
@@ -717,7 +729,7 @@ a {
     }
     
     .boton-exp {
-        width: 20%;
+        width: 30%;
         height: 10%;
         text-align: center;
         text-transform: capitalize;
@@ -751,14 +763,15 @@ a {
     
     .email {
         width: 20%;
-        margin-left: 30%;
+        margin: auto;
+        margin-left: 25%;
     }
     .icono-email{
         width: 50px;
         height: 50px;
         border-radius: 50%;
         background-color: white;
-        margin-left: 60%;
+        margin-left: 85%;
     }
     .icono-email img {
         margin-top: 30%;
@@ -766,8 +779,8 @@ a {
     }
     
     .telefono {
-        width: 30%;
-        margin-left: 33%;
+        width: 40%;
+        margin: auto;
         margin-top: 8%;
     }
     .icono-telefono{
@@ -784,7 +797,7 @@ a {
     
     .discord {
         width: 20%;
-        margin-left: 38%;
+        margin: auto;
         margin-top: 8%;
     }
     .icono-discord {
@@ -792,7 +805,7 @@ a {
         height: 50px;
         border-radius: 50%;
         background-color: white;
-        margin-left: 20%;
+        margin-left: 10%;
     }
     .icono-discord img {
         margin-top: 30%;
