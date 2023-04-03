@@ -130,7 +130,7 @@ a {
     margin-left: 15%;
 }
 
-.Contacta-Me {
+.Contactame {
     background-color: #252525;
     text-align: center;
     color: white;
@@ -164,7 +164,7 @@ a {
 .cartas-sobre-mi {
     display: flex;
     margin: 5%;
-    margin-left: 13%;
+    margin-left: 20%;
 }
 .cartas-sobre-mi p {
     margin: 0;
@@ -181,7 +181,7 @@ a {
 .cartas-educacion {
     display: flex;
     margin: 5%;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 .cartas-educacion p{
     margin: 0;
@@ -355,6 +355,7 @@ a {
 .info h4 {
     padding: 5%;
     padding-bottom: 0%;
+    margin-top: 0%;
 }
 .info p{
     padding: 5%;
@@ -423,13 +424,14 @@ a {
 
 .discord {
     width: 20%;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .icono-discord {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     background-color: white;
+    margin-left: 30%;
 }
 .icono-discord img {
     margin-top: 30%;
@@ -437,7 +439,7 @@ a {
 }
 
 
-/*---------------------------------------------------------------- VERSION CELU ------------------------------------------------------------------*/
+/*-------------------------------------------------------------- VERSION CELU --------------------------------------------------------------------*/
 
 @media (max-width: 576px) {
     h1 {
@@ -610,12 +612,12 @@ a {
 
     .carta {
         background-color: transparent;
-        width: 200px;
+        width: 60%;
         height: 300px;
         perspective: 1000px;
         margin-right: 0%;
         margin-top: 10%;
-        margin-left: 15%;
+        margin-left: 20%;
     }
 
 /*----------------------------------------------------------- HABILIDADES CELU -----------------------------------------------------------------*/
@@ -685,7 +687,7 @@ a {
         width: 90%;
         display: block;
         flex-wrap: wrap;
-        margin-left: 0%;
+        margin-left: 5%;
     }
     
     .trabajos-grupo {
@@ -742,9 +744,9 @@ a {
         font-size: 10pt;
     }
 
-/*----------------------------------------------------------- CONTACTA ME CELU -----------------------------------------------------------------*/
+/*----------------------------------------------------------- CONTACTAME CELU ------------------------------------------------------------------*/
 
-    .Contacta-Me {
+    .Contactame {
         background-color: #252525;
         text-align: center;
         color: white;
