@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <title>Portafolio</title>
 
     <link rel="icon" href="img/icono-title.ico">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
     </div>
     <div class="navbar" id="navbar">
         <div class="foto"><img src="img/yo.jpg" alt="Una foto mia"></div>
-        <div class="IrA" style="border-top: 2px solid #252525;"><a href="#inicio"><p>Inicio</p></a></div>
+        <div class="IrA"><a href="#inicio"><p>Inicio</p></a></div>
         <div class="IrA"><a href="#sobre-mi"><p>Sobre Mí</p></a></div>
         <div class="IrA"><a href="#habilidades"><p>Habilidades</p></a></div>
         <div class="IrA"><a href="#exp"><p>Experiencia</p></a></div>
@@ -216,6 +217,7 @@
     <div class="Experiencia" id="exp">
         <h1>Experiencia</h1>
 
+        <div class="aclaracion-exp"><h4>*Tocá la imagen para ver más información*</h4></div>
         <div class="trabajos-contenedor">
             <div class="trabajos-grupo">
                 <div class="trabajos-cartas" onclick="myPopup1()" >
@@ -352,6 +354,6 @@
 
 </body>
 
-<script src="script.js"></script>
+<script src="scripts.js"></script>
 
 </html>

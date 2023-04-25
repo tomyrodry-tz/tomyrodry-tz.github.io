@@ -66,5 +66,5 @@ function myPopup6() {
 
 function navbarShow() {
   var nb = document.getElementById("navbar");
-  nb.classList.toggle("show");
+  nb.classList.toggle("navbarShow");
 }

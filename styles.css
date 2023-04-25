@@ -183,7 +183,7 @@ a {
     transform: translateY(-50%);
 }
 .cartas-sobre-mi h2{
-    font-size: 30pt;
+    font-size: 25pt;
     padding-top: 15%;
 }
 
@@ -200,7 +200,7 @@ a {
     transform: translateY(-50%);
 }
 .cartas-educacion h2{
-    font-size: 30pt;
+    font-size: 25pt;
     padding-top: 15%;
 }
 
@@ -333,6 +333,10 @@ a {
     margin: auto;
 }
 
+.aclaracion-exp {
+    display: none;
+}
+
 .trabajos-grupo {
     flex: 48%;
     margin: 1%;
@@ -455,6 +459,7 @@ a {
 /*-------------------------------------------------------------- VERSION CELU --------------------------------------------------------------------*/
 
 @media (max-width: 576px) {
+
     h1 {
         font-size: 25pt;
     }
@@ -469,6 +474,7 @@ a {
     }
 
 /*---------------------------------------------------------------- NAVBAR CELU -------------------------------------------------------------------*/
+    
     .menu {
         width: 40px;
         height: 35px;
@@ -507,7 +513,9 @@ a {
         margin-bottom: 50%;
     }
 
-    .show {
+    .navbarShow {
+        display: block;
+        animation: fadeIn 1s;
         visibility: visible;
     }
 
@@ -706,6 +714,12 @@ a {
         margin-left: 0%;
     }
 
+    .aclaracion-exp {
+        display: block;
+        width: 100%;
+        opacity: 50%;
+    }
+
     .trabajos-contenedor {
         width: 90%;
         display: block;
@@ -836,6 +850,402 @@ a {
         border-radius: 50%;
         background-color: white;
         margin-left: 10%;
+    }
+    .icono-discord img {
+        margin-top: 30%;
+        width: 40%;
+    }
+
+}
+
+/*-------------------------------------------------------------- VERSION TABLET ----------------------------------------------------------------*/
+
+@media (min-width: 577px) and (max-width: 1100px) {
+
+    h1 {
+        font-size: 45pt;
+    }
+    h2 {
+        font-size: 27pt;
+    }
+    h3 {
+        font-size: 23pt;
+    }
+    p {
+        font-size: 15pt;
+    }
+
+/*--------------------------------------------------------------- NAVBAR TABLET ----------------------------------------------------------------*/
+    
+    .navbar { 
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        display: flex;
+        background-color: #151515;
+        z-index: 98;
+        color: #08fdd8;
+    }
+    .navbar img {
+        width: 50%;
+        height: 100%;
+    }
+    .navbar p {
+        width: 52px;
+        font-size: 8pt;
+        margin-top: 0%;
+        margin-bottom: 50%;
+        margin-left: 40%;
+    }
+
+    .navbar .foto {
+        display: none;
+    }
+
+    .IrA {
+        width: 50%;
+        height: 0%;
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        padding-right: 4%;
+        border-right: 2px solid #252525;
+        border-bottom: 0px;
+        border-top: 0px;
+    }
+    .IrA:hover {
+        background-color: #08fdd8;
+    }
+    .IrA:hover a {
+        color: #101010;
+    }
+
+    .github-linkedin img {
+        width: 25px;
+    }
+    .linkedin {
+        margin-left: 70%;
+    }
+
+    .idiomas {
+        display: flex;
+        width: 100%;
+        margin-top: 0.5%;
+        margin-left: 20%;
+        padding: 0%;
+
+    }
+    .idiomas img {
+        width: 32px;
+    }
+    .idioma-es {
+        padding-right: 15%;
+    }
+
+
+/*------------------------------------------------------------- INICIO TABLET -------------------------------------------------------------------*/
+
+    .Inicio {
+        width: 100%;
+        background-color: #252525;
+        align-content: center;
+        padding-bottom: 10%;
+        margin-left: 0%;
+    }
+    .titulo-inicio {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 10%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+    }
+    .foto-celu {
+        display: block;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .boton-contacto {
+        width: 40%;
+        height: 6%;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 0%;
+        border: 1px solid #08fdd8;
+        border-radius: 10px;
+        margin-left: 30%;
+    }
+    .boton-contacto p {
+        font-size: 13pt;
+    }
+    .Burbujas {
+        display: none;
+    }
+
+/*----------------------------------------------------------- SOBRE MI TABLET -------------------------------------------------------------------*/
+    
+    .Sobre-Mi {
+        width: 100%;
+        margin: auto;
+        margin-left: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .Sobre-Mi h1 {
+        margin-left: 0%;
+    }
+
+    .carta {
+        background-color: transparent;
+        width: 30%;
+        height: 400px;
+        perspective: 1000px;
+        margin-right: 0%;
+        margin-top: 10%;
+        margin-left: 3%;
+    }
+
+    .cartas-sobre-mi {
+        display: flex;
+        margin: 0%;
+        margin-left: 0%;
+    }
+    .cartas-sobre-mi p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .cartas-sobre-mi h2{
+        font-size: 25pt;
+        padding-top: 35%;
+    }
+    
+    .cartas-educacion {
+        display: flex;
+        margin: 0%;
+        margin-left: 0%;
+    }
+    .cartas-educacion p{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .cartas-educacion h2{
+        font-size: 25pt;
+        padding-top: 35%;
+    }
+
+
+/*----------------------------------------------------------- HABILIDADES TABLET ----------------------------------------------------------------*/
+    
+    .Habilidades {
+        background-color: #252525;
+        text-align: center;
+        color: white;
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: 0%;
+    }
+    .cartas-habilidades {
+        display: flex;
+        margin: 0%;
+    }
+    
+    .carta-frontend {
+        width: 30%;
+        height: 100%;
+        margin-left: 3%;
+        margin-top: 5%;
+        padding-bottom: 2%;
+        background-color: #191919;
+        color: white;
+        border-radius: 20px;
+        animation: habilidades-animacion 3s;
+        animation-play-state: paused;
+    }
+    .carta-backend {
+        width: 30%;
+        height: 100%;
+        margin-left: 3%;
+        margin-top: 5%;
+        padding-bottom: 2%;
+        background-color: #191919;
+        color: white;
+        border-radius: 20px;
+        animation: habilidades-animacion 4s;
+        animation-play-state: paused;
+    }
+    
+    .carta-extras {
+        width: 30%;
+        height: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 5%;
+        padding-bottom: 2%;
+        background-color: #191919;
+        color: white;
+        border-radius: 20px;
+        animation: habilidades-animacion 5s;
+        animation-play-state: paused;
+    }
+
+/*----------------------------------------------------------- EXPERIENCIA TABLET ----------------------------------------------------------------*/
+
+    .Experiencia {
+        text-align: center;
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 50%;
+        margin-left: 0%;
+    }
+
+    .aclaracion-exp {
+        display: block;
+        width: 100%;
+        opacity: 50%;
+    }
+
+    .trabajos-contenedor {
+        width: 90%;
+        display: block;
+        flex-wrap: wrap;
+        margin-left: 5%;
+    }
+    
+    .trabajos-grupo {
+        flex: 0%;
+        margin: 0%;
+    }
+    .trabajos-cartas {
+        width: 100%;
+        margin: 0%;
+    }
+    
+    .trabajos-cartas img{
+        width: 100%;
+        border: 2px solid #252525;
+    }
+    .trabajos-cartas img:hover {
+        opacity: 100;
+    }
+    
+    .info {
+        width: 100%;
+        padding-bottom: 3%;
+        margin-bottom: 3%;
+        text-align: justify;
+        color: white;
+        background-color: #252525;
+        display: none;
+        margin: 1%;
+    }
+    
+    .show {
+        display: block;
+        animation: fadeIn 1s;
+    }
+    
+    .info h4 {
+        margin-top: 0%;
+        padding: 5%;
+        padding-bottom: 0%;
+        font-size: 11pt;
+    }
+    .info p{
+        padding: 5%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    
+    .boton-exp {
+        width: 20%;
+        height: 10%;
+        text-align: center;
+        text-transform: capitalize;
+        margin-left: 5%;
+        padding: 2%;
+        border: 1px solid #08fdd8;
+        border-radius: 10px;
+    }
+    .boton-exp a {
+        font-size: 15pt;
+    }
+
+/*----------------------------------------------------------- CONTACTAME TABLET -----------------------------------------------------------------*/
+
+    .Contactame {
+        background-color: #252525;
+        text-align: center;
+        color: white;
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: 0%;
+    }
+
+    .contactos {
+        display: block;
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    
+    .email {
+        width: 20%;
+        margin: auto;
+        margin-left: 35%;
+    }
+    .icono-email{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: 50%;
+    }
+    .icono-email img {
+        margin-top: 30%;
+        width: 40%;
+    }
+    
+    .telefono {
+        width: 40%;
+        margin: auto;
+        margin-top: 8%;
+    }
+    .icono-telefono{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: 38%;
+    }
+    .icono-telefono img {
+        margin-top: 30%;
+        width: 40%;
+    }
+    
+    .discord {
+        width: 20%;
+        margin: auto;
+        margin-top: 8%;
+    }
+    .icono-discord {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: 25%;
     }
     .icono-discord img {
         margin-top: 30%;
