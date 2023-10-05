@@ -277,8 +277,6 @@ a {
     background-color: #191919;
     color: white;
     border-radius: 20px;
-    animation: habilidades-animacion 3s;
-    animation-play-state: paused;
 }
 .carta-backend {
     width: 20%;
@@ -288,8 +286,6 @@ a {
     background-color: #191919;
     color: white;
     border-radius: 20px;
-    animation: habilidades-animacion 4s;
-    animation-play-state: paused;
 }
 
 .carta-extras {
@@ -300,8 +296,6 @@ a {
     background-color: #191919;
     color: white;
     border-radius: 20px;
-    animation: habilidades-animacion 5s;
-    animation-play-state: paused;
 }
 
 .titulo {
@@ -316,11 +310,6 @@ a {
 }
 .titulos {
     background-color: #151515;
-}
-
-@keyframes habilidades-animacion {
-    from {opacity: 0%;}
-    to {opacity: 100%;}
 }
 
 /*---------------------------------------------------------------- EXPERIENCIA ------------------------------------------------------------------*/
